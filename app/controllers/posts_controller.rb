@@ -33,7 +33,7 @@ class PostsController < ApplicationController
   end
 
   def destroy
-    @post
+    @post.destroy
     redirect_to posts_url, notice: 'Post was successfully destroyed.'
   end
 
